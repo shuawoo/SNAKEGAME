@@ -31,7 +31,7 @@ score_font = pygame.font.SysFont("bahnschrift", 25)
 
 
 def load_highscore():
-    '''High Score'''
+    '''High Score_Score'''
 
     try:
         high_score_file = open("high_score.txt", "r")
@@ -44,7 +44,7 @@ def load_highscore():
 
 
 def load_bestplayer():
-    '''High Score'''
+    '''High Score_Player'''
     try:
         best_player_file = open("best_player.txt", "r")
         best_player = str(best_player_file.read())
