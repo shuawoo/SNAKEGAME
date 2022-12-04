@@ -42,7 +42,7 @@ def rect(point, color):
 pygame.mixer.init()
 pygame.mixer.music.load("bgm.mp3", "r")
 pygame.mixer.music.set_volume(0.5)
-pygame.mixer.music.play()
+pygame.mixer.music.play(loops=-1)
 
 player_name = '';
 default_player_name = True;
