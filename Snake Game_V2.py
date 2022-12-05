@@ -172,6 +172,8 @@ def gameloop():
     body = [Point(row=head.row, col=head.col + 1), Point(row=head.row, col=head.col + 2)]
     score = len(body) - 2
 
+
+    # debug for new food
     def new_fruit():
         while 1:
             pos = Point(row=random.randint(0, ROW - 1), col=random.randint(0, COL - 1))
@@ -212,7 +214,6 @@ def gameloop():
                         direct = "down"
 
 
-        # eat fruit and create a new one
         eat = (head.row == fruit.row and head.col == fruit.col)
         if eat:
             sound_eat.play()
@@ -246,7 +247,7 @@ def gameloop():
         rect(head, black)
         rect(fruit, orange)
 
-        #  die hit the wall or hit itself
+
         if head.col < 0 or head.col > COL or head.row < 0 or head.row > ROW:
             game_over = True
         for snake in body:
