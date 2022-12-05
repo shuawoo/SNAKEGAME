@@ -42,7 +42,11 @@ def rect(point, color):
 pygame.mixer.init()
 pygame.mixer.music.load("bgm.mp3", "r")
 pygame.mixer.music.set_volume(0.5)
-pygame.mixer.music.play()
+pygame.mixer.music.play(loops=-1)
+sound_eat = pygame.mixer.Sound("sound_eat.wav")
+sound_eat.set_volume(1)
+sound_gameover = pygame.mixer.Sound("sound_gameover.wav")
+sound_gameover.set_volume(1)
 
 player_name = '';
 default_player_name = True;
@@ -186,6 +190,7 @@ def gameloop():
     while not quit:
 
         if game_over == True:
+            sound_gameover.play()
             show_end_screen(score)
             pygame.display.update()
 
@@ -210,6 +215,7 @@ def gameloop():
         # eat fruit and create a new one
         eat = (head.row == fruit.row and head.col == fruit.col)
         if eat:
+            sound_eat.play()
             fruit = new_fruit()
             score += 1
         # insert head
