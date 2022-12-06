@@ -276,7 +276,7 @@ def gameloop():
         rect(head, black)
         rect(fruit, orange)
 
-        #  die hit the wall or hit itself
+
         if head.col < 0 or head.col > COL or head.row < 0 or head.row > ROW:
             game_over = True
         for snake in body:
