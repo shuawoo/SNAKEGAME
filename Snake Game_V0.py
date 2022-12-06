@@ -34,7 +34,7 @@ def load_highscore():
     '''High Score_Score'''
 
     try:
-        high_score_file = open("high_score.txt", "r")
+        high_score_file = open("highscore.txt", "r")
         high_score = int(high_score_file.read())
         high_score_file.close()
     except:
@@ -46,7 +46,7 @@ def load_highscore():
 def load_bestplayer():
     '''High Score_Player'''
     try:
-        best_player_file = open("best_player.txt", "r")
+        best_player_file = open("bestplayer.txt", "r")
         best_player = str(best_player_file.read())
         best_player_file.close()
     except:
@@ -57,14 +57,14 @@ def load_bestplayer():
 
 def save_high_score(new_high_score):
     # Write the high score file
-    high_score_file = open("high_score.txt", "w")
+    high_score_file = open("highscore.txt", "w")
     high_score_file.write(str(new_high_score))
     high_score_file.close()
 
 
 def save_best_player(player):
     # Write the high score file
-    best_player_file = open("best_player.txt", "w")
+    best_player_file = open("bestplayer.txt", "w")
     best_player_file.write(str(player))
     best_player_file.close()
 

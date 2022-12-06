@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a56efa56-b772-4d45-a5df-90eb6823d906" name="Changes" comment="after debug" />
+    <list default="true" id="a56efa56-b772-4d45-a5df-90eb6823d906" name="Changes" comment="after debug">
+      <change beforePath="$PROJECT_DIR$/Snake Game_V0.py" beforeDir="false" afterPath="$PROJECT_DIR$/Snake Game_V0.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/high_score.txt" beforeDir="false" afterPath="$PROJECT_DIR$/high_score.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
