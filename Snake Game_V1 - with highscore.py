@@ -241,13 +241,11 @@ def gameloop():
                     direct = "down"
 
 
-        # eat fruit and create a new one
         eat = (head.row == fruit.row and head.col == fruit.col)
         if eat:
             sound_eat.play()
             fruit = Point(row=random.randint(0, ROW - 1), col=random.randint(0, COL - 1))
             score += 1
-        # insert head
         body.insert(0, head.copy())
         if not eat:
             body.pop()

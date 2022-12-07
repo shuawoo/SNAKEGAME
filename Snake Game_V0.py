@@ -138,7 +138,7 @@ def show_end_screen(score):
     end_menu.mainloop(scrn)
 
 
-# i want head black #head and body different color
+
 def your_snake(snake_block, snake_list):
     '''Snake'''
     for x in snake_list:
@@ -147,9 +147,9 @@ def your_snake(snake_block, snake_list):
 
 def gameloop():
     '''Main Game'''
+    quit = False
     game_over = False
-    game_close = False
-    # ！！ can have x2 y2  ！！don't show up too close to the boundary?
+
     x1 = round(random.randrange(0, scrn_width - snake_block) / 10.0) * 10.0
     y1 = round(random.randrange(0, scrn_height - snake_block) / 10.0) * 10.0
 
@@ -157,23 +157,23 @@ def gameloop():
     y1_change = 0
 
     snake_list = []
-    snake_length = 1  # define the score
+    snake_length = 1
 
-    # !! not in the position of the snake?
+
     food_x = round(random.randrange(0, scrn_width - snake_block) / 10.0) * 10.0
     food_y = round(random.randrange(0, scrn_height - snake_block) / 10.0) * 10.0
     pygame.display.update()
 
-    while not game_over:
+    while not quit:
 
-        while game_close == True:
+        while game_over == True:
             show_end_screen(snake_length - 1)
             pygame.display.update()
 
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                game_over = True
+                quit = True
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_LEFT:
                     x1_change = -snake_block
@@ -188,13 +188,12 @@ def gameloop():
                     x1_change = 0
                     y1_change = snake_block
 
-        #  !! diffenrent color bound
+
         if x1 >= scrn_width or x1 <= 0 or y1 >= scrn_height or y1 < 0:
-            game_close = True
+            game_over = True
 
         snake_speed =  12 + snake_length//3
         clock = pygame.time.Clock()
-
 
         x1 += x1_change
         y1 += y1_change
@@ -208,7 +207,7 @@ def gameloop():
         for y in range(scope_y[0] * size, scrn_height, size):
             pygame.draw.line(scrn, Gainsboro, (0, y), (scrn_width, y), 1)
 
-        pygame.draw.rect(scrn, orange, [food_x, food_y, snake_block, snake_block])  # different color and limit position
+        pygame.draw.rect(scrn, orange, [food_x, food_y, snake_block, snake_block])
         snake_head = []
         snake_head.append(x1)
         snake_head.append(y1)
@@ -218,7 +217,7 @@ def gameloop():
 
         for x in snake_list[:-1]:
             if x == snake_head:
-                game_close = True
+                game_over = True
 
         your_snake(snake_block, snake_list)
         your_score(snake_length - 1)

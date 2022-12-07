@@ -1,1 +1,1 @@
-top1:shua:5,top2:Guest:1,top3:Guest:1
+top1:shua:5,top2:Guest:3,top3:Guest:2

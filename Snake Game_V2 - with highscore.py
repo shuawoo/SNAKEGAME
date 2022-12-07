@@ -4,7 +4,7 @@ import pygame_menu
 
 pygame.init()
 
-grey = (128, 128, 128)  # your_score, show_speed,
+grey = (128, 128, 128)  # your_score, show_speed
 orange = (255, 97, 3)  # food
 red = (213, 50, 80)  # not used
 green = (47, 79, 79)  # not used
