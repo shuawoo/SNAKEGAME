@@ -6,6 +6,12 @@ A SnakeGame coded in Python, easy to play and have fun！
 Our codes aim to make a snake game where players can maneuver a snake that grows longer after eating the food. One food will appear at a time and a new food will randomly be generated after the previous one has been eaten by the snake. Game will be over if the snake hit itself or the border of the game. 
 
 
+Install
+--------
+This game uses pygame and pygame_menu. Go check them out if you don't have them locally installed.
+Make sure you download the music files.
+
+
 Functions
 --------
 
@@ -16,4 +22,10 @@ Functions
 5. Music and Sound Effects: Background music is included and a sound effect is played when the snake eat the food and when the game is over.
 
 
-The updating process of this game has been shown as 3 different versions.
+Versions
+--------
+There are 3 different versions and each of them is in complete code. V0 is the primary version with only basic functions. We update it, then we have V1 and V2.
+
+
+
+You can now start explorig our snakegame and wish you a happy journey！
