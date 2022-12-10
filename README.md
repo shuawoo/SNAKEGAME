@@ -1,7 +1,8 @@
 SnakeGame
 =======
 
-A SnakeGame coded in Python, easy to play and have fun！ 
+A SnakeGame coded in Python. 
+Easy to play and have fun！ 
 
 Our codes aim to make a snake game where players can maneuver a snake that grows longer after eating the food. One food will appear at a time and a new food will randomly be generated after the previous one has been eaten by the snake. Game will be over if the snake hit itself or the border of the game. 
 
