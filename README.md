@@ -25,7 +25,7 @@ Functions
 
 Versions
 --------
-There are 3 different versions and each of them is in complete code. V0 is the primary version with only basic functions. We update it, then we have V1 and V2.
+There are 3 different versions and each of them is in complete code. V0 is the primary version with only basic functions. We update it, then we have V1 and V2, which fixing or adding funtions to the previous version.
 
 
 
