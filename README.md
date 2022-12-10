@@ -16,4 +16,4 @@ Functions
 5. Music and Sound Effects: Background music is included and a sound effect is played when the snake eat the food and when the game is over.
 
 
-The update process of this game has been shown as 3 different versions.
+The updating process of this game has been shown as 3 different versions.
